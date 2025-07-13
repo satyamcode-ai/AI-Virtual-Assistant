@@ -14,7 +14,7 @@ connectDb()
 
 app.use(cookieParser())
 app.use(express.json())
-app.options("*", cors({
+app.use(cors({
     origin: "https://ai-virtual-assistant-frontend-3k8r.onrender.com",
     credentials: true
 }));
